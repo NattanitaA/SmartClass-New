@@ -1,0 +1,112 @@
+version: "3"
+
+services:
+
+  frontend:
+    container_name: frontend
+    build: 
+      context: ./Frontend
+      dockerfile: Dockerfile.react
+    # image: smartclass_frontend:1.0
+    restart: always
+    volumes: 
+      - ./Frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+      # - "3306:3306"
+      # - "4406:4406"
+# services:
+
+  export:
+    container_name: export
+    build: 
+      context: ./Frontend
+      dockerfile: Dockerfile.export
+    depends_on:
+        - frontend
+    # image: smartclass_frontend:1.0
+    restart: always
+    volumes: 
+      - ./Frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    # depends_on:
+    #   -frontend
+    # ports:
+      # - "3000:3000"
+      # - "3306:3306"
+      # - "4406:4406"
+
+# services:
+
+  index:
+    container_name: index
+    build: 
+      context: ./Frontend
+      dockerfile: Dockerfile.index
+    depends_on:
+        - frontend
+        - export
+    # image: smartclass_frontend:1.0
+    restart: always
+    volumes: 
+      - ./Frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    # depends_on:
+    #   -frontend
+    #   -export
+    # ports:
+      # - "3000:3000"
+      # - "3306:3306"
+      # - "4406:4406"
+
+# services:
+
+  mysql:
+    container_name: mysql
+    build: 
+      context: ./Frontend
+      dockerfile: Dockerfile.mysql
+    depends_on:
+        - frontend
+        - export
+        - index
+    # image: smartclass_frontend:1.0
+    restart: always
+    volumes: 
+      - ./Frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    # depends_on:
+    #   -frontend
+    #   -export
+    #   -index
+    ports:
+      # - "3000:3000"
+      - "3306:3306"
+      # - "4406:4406"
+# services:
+
+  api:
+    container_name: api
+    build: 
+      context: ./Frontend
+      dockerfile: Dockerfile.api
+    depends_on:
+        - frontend
+        - export
+        - index
+        - mysql
+    # image: smartclass_frontend:1.0
+    restart: always
+    volumes: 
+      - ./Frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    # depends_on:
+    #   -frontend
+    #   -export
+    #   -index
+    #   -mysql
+    ports:
+      # - "3000:3000"
+      # - "3306:3306"
+      - "4406:4406"

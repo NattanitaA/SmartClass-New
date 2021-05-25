@@ -1,0 +1,86 @@
+/* form styling */
+
+.loginHeader {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .loginputLabel{
+    align-items: left;
+  }
+  .loginputLabel input {
+      position: relative;
+      vertical-align: middle;
+      width: 85%;
+      
+      height: 40px;
+      /* padding-left: 60px; */
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 40px;
+      /* margin-left: 42px; */
+      background: rgba(255,255,255,.5);
+      /* margin-top: 5px; */
+      display: inline-block;
+    }
+  
+    .loginputLabel input ::-webkit-input-placeholder{
+      color: white;
+    }
+  
+    .loginputLabel label {
+      text-transform: uppercase;
+      /* margin: auto; */
+      /* margin-top: 50px;
+      margin-bottom:10px; */
+      margin-left: 60px;
+      font-size: 1em;
+    
+    
+    }
+  
+    .loginputLabel button {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1em;
+      text-align: center;
+      color: rgba(255,255,255, 1);
+      padding: 8px 0px;
+      width: 90%;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      margin-top: 10px;
+      background-color: rgb(231, 105, 2);
+      transition-duration: 0.4s;
+      cursor: pointer;
+    
+    }
+  
+    .loginputLabel button:hover{
+      background-color: rgb(255, 255, 255);
+      color: rgb(231, 105, 2);
+      
+    }
+  
+    /* .inputLabel h4 {
+      text-align: justify left;
+    } */
+  
+    .adminEmail {
+      display: flex;
+     width: 50%;
+     margin-inline-start: 2rem;
+      margin-block-start: 0%;
+      /* margin-block-end: 0%; */
+    }
+  
+    .adminPassword {
+      display: flex;
+     width: 50%;
+     margin-inline-start: 2rem;
+      /* margin-block-start: 0%; */
+      /* margin-block-end: 0%; */
+    }
+  

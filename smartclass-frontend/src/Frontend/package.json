@@ -1,0 +1,77 @@
+{
+  "name": "school",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://school-management.github.io/frontend-schoolmanagementsystem/",
+  "dependencies": {
+    "@devexpress/dx-react-core": "^2.7.5",
+    "@devexpress/dx-react-grid": "^2.7.5",
+    "@devexpress/dx-react-grid-material-ui": "^2.7.5",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@syncfusion/ej2-react-schedule": "^19.1.58",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.21.3",
+    "daypilot-pro-react": "https://npm.daypilot.org/daypilot-pro-react/trial/2020.4.4788.tar.gz",
+    "express": "^4.17.1",
+    "firebase": "^8.4.2",
+    "font-awesome-icons": "^1.6.0",
+    "history": "^5.0.0",
+    "jspdf": "^2.3.1",
+    "jspdf-autotable": "^3.5.14",
+    "material-table": "^1.63.0",
+    "mysql": "^2.18.1",
+    "papaparse": "^5.3.0",
+    "react": "^16.14.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-calendar": "^2.19.2",
+    "react-datepicker": "^2.16.0",
+    "react-dom": "^16.14.0",
+    "react-grid-system": "^5.0.2",
+    "react-localization": "^1.0.16",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-select": "^3.2.0",
+    "react-simple-timefield": "^3.2.3",
+    "react-spring": "^9.1.2",
+    "react-switch": "^6.0.0",
+    "react-table-6": "^6.11.0",
+    "reactstrap": "^8.9.0",
+    "recharts": "^2.0.9",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "style-component": "0.0.1",
+    "styled-components": "^4.4.1"
+  },
+  "proxy": "http://10.36.3.224:80",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

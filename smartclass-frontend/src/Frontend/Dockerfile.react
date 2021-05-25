@@ -1,0 +1,55 @@
+# FROM node:alpine 
+# FROM node:12-alpine 
+
+# USER node
+# Create app directory
+# RUN mkdir -p /usr/src/app
+# WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+# COPY package.json package-lock.json ./
+
+# RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
+
+# Bundle app source
+# COPY . . 
+
+# CMD [ "node", "index.js" ]
+# CMD [ "node", "mysql.js" ]
+# CMD [ "node", "api.js" ]
+
+# EXPOSE 3000
+
+
+# CMD ["npm","start"]
+# CMD ["exportCSV.py"]
+
+# CMD [ "node", "index.js" ]
+# CMD [ "node", "mysql.js" ]
+# CMD [ "node", "api.js" ]
+
+# RUN ["chmod", "+x", "/frontend-schoolmanagementsystem-dev/src/Frontend/start.sh"]
+FROM node:12-alpine
+
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package.json .
+
+RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
+
+# Bundle app source
+COPY . .
+
+EXPOSE 3000
+CMD [ "npm", "start" ]

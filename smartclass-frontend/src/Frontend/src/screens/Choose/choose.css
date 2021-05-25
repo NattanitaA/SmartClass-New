@@ -1,0 +1,78 @@
+/* .ChooseHeader {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .chooseLabel{
+    align-items: left;
+  }
+  .chooseLabel input {
+    height: 560px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+    overflow: hidden;
+    color: aliceblue;
+    background: linear-gradient(180deg, rgb(231, 105, 2) 0%, rgb(229, 167, 130) 52%, rgba(255,255,255,0) 82%);
+    text-align: center;
+    margin-top: 10rem
+    }
+   */
+/* form styling */
+
+.chooseHeader {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top:8rem
+}
+
+.ChooseLabel  {
+    height: 560px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10 2em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+    overflow: hidden;
+    color: aliceblue;
+    background: linear-gradient(180deg, rgb(231, 105, 2) 0%, rgb(229, 167, 130) 52%, rgba(255,255,255,0) 82%);
+    text-align: center;
+    margin-top: 5rem
+  }
+  
+  
+    .ChooseLabel button {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1em;
+      text-align: center;
+      color: rgba(255,255,255, 1);
+      padding: 8px 0px;
+      width: 50%;
+      height: 40px;
+      border: none;
+      border-radius: 50px;
+      margin-top: 2rem;
+      background-color: rgb(231, 105, 2);
+      transition-duration: 0.4s;
+      cursor: pointer;
+    
+    }
+  
+    .ChooseLabel button:hover{
+      background-color: rgb(255, 255, 255);
+      color: rgb(231, 105, 2);
+      
+    }
+  
+    /* .inputLabel h4 {
+      text-align: justify left;
+    } */
+  
+
+  
